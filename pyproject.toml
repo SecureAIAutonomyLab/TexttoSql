@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "texttosql"
+version = "1.0.0"
+authors = [
+  { name="Ana Nunez", email="ana.nunez@my.utsa.edu" },
+]
+description = "An application for text to sql with chatgpt api"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+# dependencies managed by conda
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SecureAIAutonomyLab/TexttoSql"
+"Bug Tracker" = "https://github.com/SecureAIAutonomyLab/TexttoSql/issues"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = [
+  "src"
+]
+testpaths = [
+    "tests"
+]
